@@ -27,7 +27,7 @@ Proyek sistem kendali perangkat elektronik rumah pintar (Smart Home) berbasis **
 * Modul Kipas DC (Fan)
 * RGB LED
 * Active/Passive Buzzer
-* Kabel Jumper & Protboard / Rumah Maket
+* Kabel Jumper / Rumah Maket
 
 ### Perangkat Lunak (Software)
 * **Arduino IDE** (untuk *firmware* Arduino)
