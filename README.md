@@ -37,7 +37,7 @@ Proyek sistem kendali perangkat elektronik rumah pintar (Smart Home) berbasis **
 
 ---
 
-### 2. Protokol Komunikasi Serial
+### Protokol Komunikasi Serial
 Tabel perintah data String yang dikirim dari Processing ke Arduino untuk mempermudah pemetaan fungsi kontrol.
 
 ## 🔌 Protokol Komunikasi Serial (9600 Baudrate)
