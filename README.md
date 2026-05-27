@@ -37,6 +37,22 @@ Proyek sistem kendali perangkat elektronik rumah pintar (Smart Home) berbasis **
 
 ---
 
+### 2. Protokol Komunikasi Serial
+Tabel perintah data String yang dikirim dari Processing ke Arduino untuk mempermudah pemetaan fungsi kontrol.
+
+## 🔌 Protokol Komunikasi Serial (9600 Baudrate)
+
+| Perintah Serial | Perangkat Hardware | Status GUI | Status LCD (16x2) |
+| :--- | :--- | :--- | :--- |
+| `RED_ON` | LED Merah Aktif | RED LED ON | `R:1 G:0 B:0` |
+| `GREEN_ON` | LED Hijau Aktif | GREEN LED ON | `R:0 G:1 B:0` |
+| `BLUE_ON` | LED Biru Aktif | BLUE LED ON | `R:0 G:0 B:1` |
+| `LED_OFF` | Semua LED Mati | ALL LED OFF | `R:0 G:0 B:0` |
+| `FAN_ON` | Kipas Berputar | FAN ACTIVE | `F:ON` |
+| `FAN_OFF` | Kipas Berhenti | FAN OFF | `F:OFF` |
+| `BUZZ_ON` | Buzzer Berbunyi | BUZZER ACTIVE | `BZ:ON` |
+| `BUZZ_OFF` | Buzzer Senyap | BUZZER OFF | `BZ:OFF` |
+
 ## 📊 Alur Kerja Sistem (Flowchart)
 
 Sistem bekerja dengan mendeteksi input tombol pada GUI Processing, mengirimkan karakter perintah melalui serial COM, lalu dieksekusi oleh Arduino untuk mengubah status pin *output* dan memperbarui tampilan LCD.
